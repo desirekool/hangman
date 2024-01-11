@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-button {
+    @apply uppercase p-4 py-1 bg-white text-slate-700 rounded-md font-bold block hover:bg-slate-300 hover:scale-110 transition-all
+  }
+  .btn {
+    @apply p-2 px-5 flex items-center justify-center bg-blue-800 text-white rounded-md text-xl uppercase font-bold hover:scale-105 transition-all;
+  }
+  .btn-white {
+    @apply bg-white text-black;
+  }
+  .btn-error {
+    @apply bg-red-800;
+  }
+  .btn-label {
+    @apply bg-white rounded-2xl text-black text-sm ml-2 px-2 opacity-80;
+  }
+  .keyboard {
+    @apply flex flex-col gap-3 items-center;
+  }
+  .keys-row {
+    @apply flex gap-3;
+  }
+  .key {
+    @apply h-[60px] w-[60px] border border-slate-300 bg-white
+    rounded-md uppercase font-bold text-xl shadow-lg
+    active:shadow-sm active:scale-95 disabled:scale-95 disabled:shadow-sm
+    disabled:opacity-30 hover:scale-105;
+  }
+  .alert-box {
+    @apply p-5 border rounded-md border-slate-700 text-center w-full max-w-[500px] flex flex-col items-center;
+  }
+  .alert-box h6 {
+    @apply text-3xl uppercase font-bold;
+  }
+  .alert-box p {
+    @apply text-lg py-3;
+  }
+  .alert-success {
+    @apply bg-green-200 border-green-500;
+  }
+  .alert-error {
+    @apply bg-red-200 border-red-500;
+  }
+  .btn-group {
+    @apply flex gap-5;
+  }
+}
